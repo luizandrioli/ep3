@@ -1,0 +1,84 @@
+body {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "cabeca cabeca cabeca cabeca"
+        "esquer prici princi direit"
+        "rodape rodape rodape rodape";
+    grid-template-columns: 300px auto auto 300px;
+    grid-template-rows: auto auto auto auto;
+    background-color: #8E8080;
+
+}
+
+.grad_h{
+    grid-area: cabeca;
+    background-color: #8E8080;    
+    min-height: 150px;
+}
+
+
+.grad_m{
+    grid-area: princi;
+    text-align: justify;
+    color: black;
+    background-color:antiquewhite;
+    border-style: groove;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 2%;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.grad_e{
+    grid-area: esquer;   
+    padding-left: 10px;
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+    border-style: groove;
+    line-height: 1.5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.grad_d{    
+    grid-area: direit;
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+    border-style: groove;
+    line-height: 1.5;
+    padding-top: 5px;
+    padding-bottom: 5%;
+}
+
+.grad_f{
+    grid-area: rodape;
+}
+img {
+    text-align: center;
+    width: 200px;
+}
+h3{
+    text-align: center;
+}
+iframe{
+    width: 200px;
+    height: 200px;
+}
+#reto{
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7e5313;
+    color: #ffffff;
+    box-sizing: border-box;
+}
