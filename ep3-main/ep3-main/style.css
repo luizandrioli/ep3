@@ -1,84 +1,95 @@
 body {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
+    display: grid;/*permite trabalharmos com os elementos no formato de grade*/
+    grid-gap: 20px;/*declara as propriedades em um só lugar*/
+    grid-template-areas:/*define as areas criadas*/
         "cabeca cabeca cabeca cabeca"
         "esquer prici princi direit"
         "rodape rodape rodape rodape";
-    grid-template-columns: 300px auto auto 300px;
-    grid-template-rows: auto auto auto auto;
-    background-color: #8E8080;
+    grid-template-columns: 300px auto auto 300px;/*define tamanho e quantas colunas criadas*/
+    grid-template-rows: auto auto auto auto;/*define tamanho automático das linhas*/
+    background-color: #8E8080;/*altera cor de fundo*/
 
 }
 
 .grad_h{
-    grid-area: cabeca;
-    background-color: #8E8080;    
-    min-height: 150px;
+    grid-area: cabeca;/*parte que compõe uma área da grade*/
+    background-color: #7e5313;    
+    min-height: 150px;/*define altura mínima de um elemento*/
+    display: flex
+   
+    
+    
 }
+ 
+nav{
+    display: flex;/*define se um elemento é tratado como um bloco ou elemento inline */
+    justify-content: center;/*é usada para alinhar os elementos ao longo do eixo principal */
+    align-items: center;/*como flex items são alinhados de acordo com o eixo transversal*/
+    text-align: center;/*alinha elemento centralmente*/
+
+}
+
 
 
 .grad_m{
-    grid-area: princi;
-    text-align: justify;
-    color: black;
-    background-color:antiquewhite;
-    border-style: groove;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    margin-right: 2%;
-    line-height: 1.5;
-    padding: 10px;
+    grid-area: princi;/*parte que compõe uma área da grade*/
+    text-align: justify;/*justifica todo o texto*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    margin-bottom: 3%;/*define margem na parte inferior*/
+    margin-top: 3%;/*define espaço acima do elemento*/
+    margin-right: 2%;/*define espaço do lado direito*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding: 10px;/*define distância entre conteúdo e suas bordas*/
 }
 
 .grad_e{
-    grid-area: esquer;   
-    padding-left: 10px;
-    text-align: center;
-    color: black;
-    background-color: antiquewhite;
-    border-style: groove;
-    line-height: 1.5;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    grid-area: esquer;/*parte que compõe uma área da grade*/
+    padding-left: 10px;/*define o espaço no lado esquerdo*/
+    text-align: center;/*alinha o texto centralmente*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding-top: 5%;/*define espaçamento interno superior*/
+    padding-bottom: 5%;/*define espaçamento interno inferior*/
 }
 
 .grad_d{    
-    grid-area: direit;
-    text-align: center;
-    color: black;
-    background-color: antiquewhite;
-    border-style: groove;
-    line-height: 1.5;
-    padding-top: 5px;
-    padding-bottom: 5%;
+    grid-area: direit;/*parte que compõe uma área da grade*/
+    text-align: center;/*alinha o texto centralmente*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding-top: 5%;/*define espaçamento interno superior*/
+    padding-bottom: 5%;/*define espaçamento interno inferior*/
 }
 
-.grad_f{
-    grid-area: rodape;
-}
 img {
-    text-align: center;
-    width: 200px;
+    text-align: center;/*alinha elemento centralmente*/
+    width: 200px;/*altera o tamanho*/
 }
 h3{
     text-align: center;
 }
 iframe{
-    width: 200px;
-    height: 200px;
+    width: 200px;/*altera largura*/
+    height: 200px;/*altera altura*/
 }
-#reto{
-    text-align: justify;
+.reto{
+    text-align: justify;/*justifica o texto*/
 }
 
-footer {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #7e5313;
-    color: #ffffff;
-    box-sizing: border-box;
+.grad_f  {
+    grid-area: rodape;/*parte que compõe uma área da grade*/
+    width: 100%;/*altera largura*/
+    padding: 10px;/*define distância entre conteúdo e suas bordas*/
+    display: flex;/*define se um elemento é tratado como um bloco ou elemento inline */
+    justify-content: center;/*é usada para alinhar os elementos ao longo do eixo principal */
+    align-items: center;/*como flex items são alinhados de acordo com o eixo transversal*/
+    background: #7e5313;/*define a cor de fundo*/
+    color: #ffffff;/*Define a cor do texto de um elemento*/
+    box-sizing: border-box;/* usada para calcular larguras (widths) e alturas (heights) dos elementos.*/
 }
