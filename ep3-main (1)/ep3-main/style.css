@@ -1,0 +1,110 @@
+body {
+    display: grid;/*permite trabalharmos com os elementos no formato de grade*/
+    grid-gap: 20px;/*declara as propriedades em um só lugar*/
+    grid-template-areas:/*define as areas criadas*/
+        "cabeca cabeca cabeca cabeca"
+        "esquer prici princi direit"
+        "rodape rodape rodape rodape";
+    grid-template-columns: 300px auto auto 300px;/*define tamanho e quantas colunas criadas*/
+    grid-template-rows: auto auto auto auto;/*define tamanho automático das linhas*/
+    background-color: #8E8080;/*altera cor de fundo*/
+
+}
+
+.grad_h{
+    grid-area: cabeca;/*parte que compõe uma área da grade*/
+    background-color: #5b5872;    
+    min-height: 150px;/*define altura mínima de um elemento*/
+    display: flex;
+    border: solid
+   
+}
+ 
+nav li{
+    display: flex;/*define se um elemento é tratado como um bloco ou elemento inline */
+    justify-content: space-between;/*é usada para alinhar os elementos ao longo do eixo principal */
+    list-style-type: none;/*como flex items são alinhados de acordo com o eixo transversal*/
+    align-items: center;/*alinha elemento centralmente*/
+
+}
+
+.grad_m{
+    grid-area: princi;/*parte que compõe uma área da grade*/
+    text-align: justify;/*justifica todo o texto*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    margin-bottom: 3%;/*define margem na parte inferior*/
+    margin-top: 3%;/*define espaço acima do elemento*/
+    margin-right: 2%;/*define espaço do lado direito*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding: 10px;/*define distância entre conteúdo e suas bordas*/
+}
+
+.grad_e{
+    grid-area: esquer;/*parte que compõe uma área da grade*/
+    padding-left: 10px;/*define o espaço no lado esquerdo*/
+    text-align: center;/*alinha o texto centralmente*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding-top: 5%;/*define espaçamento interno superior*/
+    padding-bottom: 5%;/*define espaçamento interno inferior*/
+}
+
+.grad_d{    
+    grid-area: direit;/*parte que compõe uma área da grade*/
+    text-align: center;/*alinha o texto centralmente*/
+    color: black;/*altera cor de letra para preto*/
+    background-color:antiquewhite;/*altera cor de fundo*/
+    border-style: groove;/*estilo de borda em groove*/
+    line-height: 1.5;/*define espaçamente entre linhas*/
+    padding-top: 5%;/*define espaçamento interno superior*/
+    padding-bottom: 5%;/*define espaçamento interno inferior*/
+}
+
+img {
+    text-align: center;/*alinha elemento centralmente*/
+    width: 200px;/*altera o tamanho*/
+}
+h3{
+    text-align: center;
+}
+iframe{
+    width: 200px;/*altera largura*/
+    height: 200px;/*altera altura*/
+}
+.reto{
+    text-align: justify;/*justifica o texto*/
+}
+
+.grad_f  {
+    grid-area: rodape;/*parte que compõe uma área da grade*/
+    width: 100%;/*altera largura*/
+    padding: 10px;/*define distância entre conteúdo e suas bordas*/
+    display: flex;/*define se um elemento é tratado como um bloco ou elemento inline */
+    justify-content: center;/*é usada para alinhar os elementos ao longo do eixo principal */
+    align-items: center;/*como flex items são alinhados de acordo com o eixo transversal*/
+    background-color: #5b5872;/*define a cor de fundo*/
+    color: #ffffff;/*Define a cor do texto de um elemento*/
+    box-sizing: border-box;/* usada para calcular larguras (widths) e alturas (heights) dos elementos.*/
+    border: solid;
+}
+.imgrenan{
+    width: 600px;
+    right: 600px;
+}
+.menu li{
+    display: inline-block; /* a tag display define os tipos de exibição internos e externos de um elemento.*/
+    margin: 0 0px;  /*adiciona uma margem ao seu elemento.*/
+    border: solid rgb(241, 239, 239) 2px; /*adicionar uma borda a pagina*/
+}
+.menu li a{
+    font-size: 24px; /* estabelece o tamanho da fonte.*/
+    text-decoration: none; /*decoracao usada na fonte para um texto de elementos*/
+    color: rgb(250, 245, 245);  /*adicona cor*/ 
+    text-transform: uppercase;/*especifica como capitalizar um texto de um elemento.*/ 
+    padding: 10PX 25px; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    border-radius: 10px; /* adiciona bordas arredondadas*/
+}
